@@ -1,0 +1,10 @@
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.exe
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.pdb
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.Form1.resources
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.Form2.resources
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.Properties.Resources.resources
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.csproj.GenerateResource.Cache
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.exe
+C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.pdb
