@@ -141,87 +141,6 @@ namespace SmartDeviceProject2
             {   Salva_Arquivo();
             }
         }
-       
-        //inserindo apenas online
-        public void insere_online_only()
-        {
-            try
-            {
-                equipamento = retorna_equipamento();//pegando o numero do equipamento no config.cfg
-                int matricula = int.Parse(textBox1.Text);
-                string Data1 = DateTime.Now.ToShortDateString();
-                string Data2 = DateTime.Now.ToLongTimeString();
-                Conecta bo = new Conecta();
-                Conecta_TO to = new Conecta_TO();
-                string status = bo.consulta(textBox1.Text);
-                
-                //******************************====================*************
-                if (status == "Liberado") //SE O USUARIO ESTIVER LIBERADO ELE SALVA COM 10
-                {
-                    status_sentido = 10;
-                    if (button1.Text == "ENTRADA")
-                    {
-                        sentido = 1;
-                        area_de = 1;
-                        area_para = 2;
-                    }
-                    else if (button1.Text == "SAIDA")
-                    {
-                        sentido = 2;
-                        area_de = 2;
-                        area_para = 1;
-                    }
-                    //inserindo no banco de dados se ele estiver liberado********
-                    to.Matricula = matricula;
-                    to.Data = Data1 + " " + Data2;
-                    to.Equipamento = equipamento;
-                    to.Sentido = sentido;
-                    to.Status = status_sentido;
-                    to.Area_de = area_de;
-                    to.Area_para = area_para;
-                    //**********passando para o banco aqui********
-                   //bo.Inserir_Log(to);
-                    LbStatus.Text = "ONLINE";
-                    MessageBox.Show("Liberado");
-
-                }
-                else//CASO SEJA ACESSO NEGADO ELE SALVA DA MESMA FORMA 
-                {
-                    status_sentido = 09;
-                    if (button1.Text == "ENTRADA")
-                    {
-                        sentido = 1;
-                        area_de = 1;
-                        area_para = 2;
-
-                    }
-                    else if (button1.Text == "SAIDA")
-                    {
-                        sentido = 2;
-                        area_de = 2;
-                        area_para = 1;
-
-                    }
-                    //inserindo no banco de dados se ele estiver NEGADO********
-                    to.Matricula = matricula;
-                    to.Data = Data1 + " " + Data2;
-                    to.Equipamento = equipamento;
-                    to.Sentido = sentido;
-                    to.Status = status_sentido;
-                    to.Area_de = area_de;
-                    to.Area_para = area_para;
-                    //**********passando para o banco aqui********
-                    //bo.Inserir_Log(to);
-                    LbStatus.Text = "ONLINE";
-                    MessageBox.Show("Liberado");
-                }
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.Message);//verificando o erro
-            }
-        
-        }
             
         //verificando arquivo
         private void Form1_Load(object sender, EventArgs e)
@@ -248,60 +167,7 @@ namespace SmartDeviceProject2
             
         }
         
-        //inserindo on/off-2 por metodos
-        public void insere_on_off2()
-        {
-            try
-            {
-                equipamento = 1;//retorna_equipamento();//pegando o numero do equipamento no config.cfg
-                int matricula = int.Parse(textBox1.Text);
-                string Data1 = DateTime.Now.ToShortDateString();
-                string Data2 = DateTime.Now.ToLongTimeString();
-                Conecta bo = new Conecta();
-                Conecta_TO to = new Conecta_TO();
-                string status = bo.consulta(textBox1.Text);
-                
-                //******************************====================*************
-                if (status == "Liberado") //SE O USUARIO ESTIVER LIBERADO ELE SALVA COM 10
-                {
-                    status_sentido = 10;
-                    if (button1.Text == "ENTRADA")
-                    {
-                        sentido = 1;
-                        area_de = 1;
-                        area_para = 2;
-                    }
-                    else if (button1.Text == "SAIDA")
-                    {
-                        sentido = 2;
-                        area_de = 2;
-                        area_para = 1;
-                    }
-                    //inserindo no banco de dados se ele estiver liberado********
-                    to.Matricula = matricula;
-                    to.Data = Data1 + " " + Data2;
-                    to.Equipamento = equipamento;
-                    to.Sentido = sentido;
-                    to.Status = status_sentido;
-                    to.Area_de = area_de;
-                    to.Area_para = area_para;
-                    //**********passando para o banco aqui********
-                    //LerArquivo_ParaBanco();
-                    //bo.Inserir_Log(to);
-                    LbStatus.Text = "ONLINE";
-                    MessageBox.Show("Liberado");
-
-                }
-                
-            }
-            catch
-            {   //salvando dados no arquivo
-                Salva_Arquivo();
-                MessageBox.Show("erro");
-            }
-
-        }
-
+       
         //pesquisa o equipamento no banco
         public int retorna_equipamento()
         {
@@ -373,7 +239,7 @@ namespace SmartDeviceProject2
 
             //passar também o equipamento e salvar no banco
             //retorna_equipamento();
-            status_sentido = 10;
+            status_sentido = 12;
             if (button1.Text == "ENTRADA")
             {
                 sentido = 1;
