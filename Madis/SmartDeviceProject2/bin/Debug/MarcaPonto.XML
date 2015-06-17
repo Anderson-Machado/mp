@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MarcaPonto</name>
+    </assembly>
+    <members>
+        <member name="M:SmartDeviceProject2.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:SmartDeviceProject2.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Lógica funcional de acesso(entrada/saida)
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.textBox1_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            verificação, caso seja enter(13) verfificar
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.insere_webService">
+            <summary>
+            Inserindo no banco de dados através de web services
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            Leitura do arquivo de configuração ao abrir o programa
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.retorna_equipamento">
+            <summary>
+            Metodo para retorno do numero de equipamento registrado no arquivo de configuração.
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.Retorna_Url">
+            <summary>
+            Metodo para retorno de URL do webservice
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.LerArquivo_ParaBanco">
+            <summary>
+            Metodo para varredura do arquivo e salvando no banco de dados via webservices
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form1.Salva_Arquivo">
+            <summary>
+            Metodo para salvar arquivo caso não haja conexão com o servidor
+            </summary>
+        </member>
+        <member name="T:MarcaPonto.Properties.Resources">
+            <summary>
+              Uma classe de recurso de tipo de alta segurança, para pesquisar seqüências de caracteres localizadas etc.
+            </summary>
+        </member>
+        <member name="P:MarcaPonto.Properties.Resources.ResourceManager">
+            <summary>
+              Retorna a instância de ResourceManager armazenada em cache usada por essa classe.
+            </summary>
+        </member>
+        <member name="P:MarcaPonto.Properties.Resources.Culture">
+            <summary>
+              Substitui a propriedade CurrentUICulture do thread atual para todas as
+              pesquisas de recursos que usam essa classe de recurso de tipo de alta segurança.
+            </summary>
+        </member>
+        <member name="F:SmartDeviceProject2.Form2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SmartDeviceProject2.Form2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SmartDeviceProject2.Form2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SmartDeviceProject2.Configura">
+            <summary>
+             Esta clase é resposável pela escrtita de configuração do arquivo
+            </summary>
+        </member>
+        <member name="T:MarcaPonto.MarcaPonto.Service">
+            <remarks/>
+        </member>
+        <member name="M:MarcaPonto.MarcaPonto.Service.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:MarcaPonto.MarcaPonto.Service.insere(System.Int32,System.Int32,System.String,System.Int16,System.Int16,System.Int16,System.Int16)">
+            <remarks/>
+        </member>
+        <member name="M:MarcaPonto.MarcaPonto.Service.Begininsere(System.Int32,System.Int32,System.String,System.Int16,System.Int16,System.Int16,System.Int16,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:MarcaPonto.MarcaPonto.Service.Endinsere(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:MarcaPonto.MarcaPonto.Service.consulta(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:MarcaPonto.MarcaPonto.Service.Beginconsulta(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:MarcaPonto.MarcaPonto.Service.Endconsulta(System.IAsyncResult)">
+            <remarks/>
+        </member>
+    </members>
+</doc>

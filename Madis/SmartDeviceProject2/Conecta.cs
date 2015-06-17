@@ -6,7 +6,10 @@ using System.Data;
 using System.IO;
 
 namespace SmartDeviceProject2
-{
+{  ///
+   /// Codigo não utilizado neste projeto
+   /// Esta classe apenas para teste de projeto
+    ///
     public class Conecta
     {
       private string strconn;

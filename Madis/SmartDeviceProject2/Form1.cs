@@ -23,8 +23,10 @@ namespace SmartDeviceProject2
             InitializeComponent();
             textBox1.Focus();
         }
-        
-        //botão para a lógica de funcionamento
+
+        /// <summary>
+        /// Lógica funcional de acesso(entrada/saida)
+        /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
             if (button1.Text == "ENTRADA")
@@ -43,8 +45,9 @@ namespace SmartDeviceProject2
                 frm.Show();
             }
         }
-
-        //verificação, caso seja enter verfificar
+        /// <summary>
+        /// verificação, caso seja enter(13) verfificar
+        /// </summary>
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)//pegando enter
@@ -53,9 +56,10 @@ namespace SmartDeviceProject2
                 textBox1.Text = "";
             }
         }
-        
-        //insere on/off-1
-        public void insere_webService()
+        /// <summary>
+        /// Inserindo no banco de dados através de web services
+        /// </summary>
+         public void insere_webService()
         {            
             try
             {
@@ -141,8 +145,9 @@ namespace SmartDeviceProject2
             {   Salva_Arquivo();
             }
         }
-            
-        //verificando arquivo
+         /// <summary>
+         /// Leitura do arquivo de configuração ao abrir o programa
+         /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {  
             //ler o equipamento do arquivo e salvar em uma variavel
@@ -166,9 +171,9 @@ namespace SmartDeviceProject2
            
             
         }
-        
-       
-        //pesquisa o equipamento no banco
+        /// <summary>
+        /// Metodo para retorno do numero de equipamento registrado no arquivo de configuração.
+        /// </summary>
         public int retorna_equipamento()
         {
             StreamReader leitura = new StreamReader(arquivo_conf);
@@ -176,7 +181,9 @@ namespace SmartDeviceProject2
               leitura.Close();
                return equipamento;
         }
-
+        /// <summary>
+        /// Metodo para retorno de URL do webservice
+        /// </summary>
         public string Retorna_Url()
         {
             StreamReader leitura = new StreamReader(arquivo_conf);
@@ -184,8 +191,9 @@ namespace SmartDeviceProject2
             string ip = leitura.ReadLine();
             return ip;
         }
-
-        //ler do arquivo para salvar no banco
+        /// <summary>
+        /// Metodo para varredura do arquivo e salvando no banco de dados via webservices
+        /// </summary>
         public void LerArquivo_ParaBanco()
         {
             //verificar se arquivo existe e salvar o que esta nele e apagar ao acabar de ler*****
@@ -223,8 +231,9 @@ namespace SmartDeviceProject2
                 LbStatus.Text = "ONLINE";
             }
         }
-        
-        //salva do programa para txt
+        /// <summary>
+        /// Metodo para salvar arquivo caso não haja conexão com o servidor
+        /// </summary>
         public void Salva_Arquivo()
         {
             LbStatus.Text = "OFFLINE";

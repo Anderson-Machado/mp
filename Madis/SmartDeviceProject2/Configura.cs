@@ -5,7 +5,11 @@ using System.Text;
 using System.IO;
 
 namespace SmartDeviceProject2
-{
+{   
+    /// <summary>
+    ///  Esta clase é resposável pela escrtita de configuração do arquivo
+    /// </summary>
+
     class Configura
     {
         string arquivo = @"\Program Files\MarcaPonto\Config.cfg";
