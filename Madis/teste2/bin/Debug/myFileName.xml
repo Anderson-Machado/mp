@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Acesso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Matricula>0</Matricula>
+  <Equipamento>0</Equipamento>
+  <Status_sentido>0</Status_sentido>
+</Acesso>

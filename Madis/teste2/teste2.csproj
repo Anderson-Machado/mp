@@ -37,6 +37,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acesso.cs" />
+    <Compile Include="Arquivos.cs" />
     <Compile Include="Conecta.cs" />
     <Compile Include="Configura.cs" />
     <Compile Include="Program.cs" />

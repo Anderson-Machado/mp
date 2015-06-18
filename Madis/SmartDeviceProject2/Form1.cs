@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using MarcaPonto;
+using System.Xml.Serialization;
 namespace SmartDeviceProject2
 {
     public partial class Form1 : Form
@@ -277,8 +279,36 @@ namespace SmartDeviceProject2
             log.WriteLine(matricula + ";" + equipamento + ";" + Data1 + " " + Data2 + ";" + sentido + ";" + status_sentido + ";" + area_de + ";" + area_para);
             //log.WriteLine();//verificar se ele ta incluindo algo em branco no banco 
             log.Close();
-               
+               //testando arquivo serializer
+            //salvar_arquivoSerializado(status_sentido);
         }
 
-              }
+        public void salvar_arquivoSerializado(int Ssentido)
+        {
+            Acesso myObject = new Acesso();
+            myObject.Data11 = DateTime.Now.ToShortDateString()+" "+DateTime.Now.ToLongTimeString();
+            myObject.Equipamento = retorna_equipamento();
+            myObject.Matricula = int.Parse(textBox1.Text);
+            myObject.Status_sentido = Ssentido;
+            //serializando arquivo
+            // Insert code to set properties and fields of the object.
+            XmlSerializer mySerializer = new XmlSerializer(typeof(Acesso));
+            // To write to a file, create a StreamWriter object.
+            StreamWriter myWriter = new StreamWriter("myFileName.xml");
+            mySerializer.Serialize(myWriter, myObject);
+
+        }
+        public void Ler_arquivo_Serialize_para_banco()
+        {
+            Acesso myObject;
+// Construct an instance of the XmlSerializer with the type
+// of object that is being deserialized.
+            XmlSerializer mySerializer =new XmlSerializer(typeof(Acesso));
+// To read the file, create a FileStream.
+            FileStream myFileStream = new FileStream("myFileName.xml", FileMode.Open);
+// Call the Deserialize method and cast to the object type.
+            myObject = (Acesso)mySerializer.Deserialize(myFileStream);
+           
+        }
+     }
 }

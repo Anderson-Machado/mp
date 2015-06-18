@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acesso.cs" />
     <Compile Include="Conecta.cs" />
     <Compile Include="Conecta_TO.cs" />
     <Compile Include="Configura.cs" />
