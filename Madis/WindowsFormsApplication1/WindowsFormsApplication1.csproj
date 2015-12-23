@@ -3,7 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
+    <ProductVersion>9.0.21022</ProductVersion>
+=======
     <ProductVersion>9.0.30729</ProductVersion>
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{84909E35-84FD-41BE-BC99-CE5F63E037C1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -51,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+<<<<<<< HEAD
+      <SubType>Designer</SubType>
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,10 +88,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <WebReferenceUrl Include="http://10.0.6.91/web/Service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://10.0.6.91/web/Service.asmx</UpdateFromURL>
+=======
     <WebReferenceUrl Include="http://localhost:3374/WebSite1/Service.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\localhost\</RelPath>
       <UpdateFromURL>http://localhost:3374/WebSite1/Service.asmx</UpdateFromURL>
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>

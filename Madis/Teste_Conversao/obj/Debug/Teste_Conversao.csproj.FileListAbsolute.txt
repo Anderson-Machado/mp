@@ -1,0 +1,8 @@
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Teste_Conversao\bin\Debug\Teste_Conversao.exe
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Teste_Conversao\bin\Debug\Teste_Conversao.pdb
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Teste_Conversao\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Teste_Conversao\obj\Debug\Teste_Conversao.Form1.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Teste_Conversao\obj\Debug\Teste_Conversao.Properties.Resources.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Teste_Conversao\obj\Debug\Teste_Conversao.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Teste_Conversao\obj\Debug\Teste_Conversao.exe
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Teste_Conversao\obj\Debug\Teste_Conversao.pdb

@@ -42,5 +42,23 @@ namespace MarcaPonto
             set { status_sentido = value; }
         }
 
+<<<<<<< HEAD
+        private int area_de;
+
+        public int Area_de
+        {
+            get { return area_de; }
+            set { area_de = value; }
+        }
+        private int area_para;
+
+        public int Area_para
+        {
+            get { return area_para; }
+            set { area_para = value; }
+        }
+
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     }
 }

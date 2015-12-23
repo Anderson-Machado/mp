@@ -2,7 +2,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
+    <ProductVersion>9.0.21022</ProductVersion>
+=======
     <ProductVersion>9.0.30729</ProductVersion>
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{BB6026DA-FF74-4F5F-9939-6FAFFC369AD4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -77,9 +81,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+<<<<<<< HEAD
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+=======
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +103,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Serializer.cs" />
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     <Compile Include="Web References\MarcaPonto\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,10 +121,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <WebReferenceUrl Include="http://10.0.6.91/web/service.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\MarcaPonto\</RelPath>
+      <UpdateFromURL>http://10.0.6.91/web/service.asmx</UpdateFromURL>
+=======
     <WebReferenceUrl Include="http://prog/Web/service.asmx">
       <UrlBehavior>Static</UrlBehavior>
       <RelPath>Web References\MarcaPonto\</RelPath>
       <UpdateFromURL>http://prog/Web/service.asmx</UpdateFromURL>
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>

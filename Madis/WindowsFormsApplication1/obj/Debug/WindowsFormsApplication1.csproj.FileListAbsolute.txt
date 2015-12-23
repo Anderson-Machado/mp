@@ -7,3 +7,15 @@ C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\WindowsFo
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+<<<<<<< HEAD
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5

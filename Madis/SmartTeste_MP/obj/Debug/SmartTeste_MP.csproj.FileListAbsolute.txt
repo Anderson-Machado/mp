@@ -1,0 +1,8 @@
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartTeste_MP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartTeste_MP\obj\Debug\SmartTeste_MP.Form1.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartTeste_MP\obj\Debug\SmartTeste_MP.Properties.Resources.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartTeste_MP\obj\Debug\SmartTeste_MP.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartTeste_MP\bin\Debug\SmartTeste_MP.exe
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartTeste_MP\bin\Debug\SmartTeste_MP.pdb
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartTeste_MP\obj\Debug\SmartTeste_MP.exe
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartTeste_MP\obj\Debug\SmartTeste_MP.pdb

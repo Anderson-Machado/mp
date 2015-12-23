@@ -27,7 +27,13 @@ namespace SmartDeviceProject2
                     log.Close();
                     Configura conf = new Configura();
                     conf.escrita(txtEquipamento.Text, txtIP.Text);
+<<<<<<< HEAD
+                   // conf.escrita(txtEquipamento.Text, txtIP.Text);
                     MessageBox.Show("Dados configurado com sucesso!");
+                   Application.Exit();
+=======
+                    MessageBox.Show("Dados configurado com sucesso!");
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
                 }
             }
             catch (Exception ex)
@@ -43,9 +49,18 @@ namespace SmartDeviceProject2
             string arquivo_conf = @"\Program Files\MarcaPonto\Config.cfg";
             StreamReader leitura = new StreamReader(arquivo_conf);
             txtEquipamento.Text = leitura.ReadLine();
+<<<<<<< HEAD
+            //string equi = leitura.ReadLine();
+            txtIP.Text = leitura.ReadLine();
+            leitura.Close();
+           //desabilitando Nº Equipamento
+            //label1.Visible = false;
+            //txtEquipamento.Visible = false;
+=======
             txtIP.Text = leitura.ReadLine();
             leitura.Close();
            
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
         }
     }
 }

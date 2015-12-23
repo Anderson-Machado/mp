@@ -5,7 +5,12 @@
       <s:element name="insere">
         <s:complexType>
           <s:sequence>
+<<<<<<< HEAD
+            <s:element minOccurs="0" maxOccurs="1" name="Matricula" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pes" type="s:long" />
+=======
             <s:element minOccurs="1" maxOccurs="1" name="Matricula" type="s:int" />
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
             <s:element minOccurs="1" maxOccurs="1" name="equipamento" type="s:int" />
             <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
             <s:element minOccurs="1" maxOccurs="1" name="Sentido" type="s:short" />
@@ -32,6 +37,10 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+<<<<<<< HEAD
+      <s:element name="string" nillable="true" type="s:string" />
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     </s:schema>
   </wsdl:types>
   <wsdl:message name="insereSoapIn">
@@ -46,6 +55,43 @@
   <wsdl:message name="consultaSoapOut">
     <wsdl:part name="parameters" element="tns:consultaResponse" />
   </wsdl:message>
+<<<<<<< HEAD
+  <wsdl:message name="insereHttpGetIn">
+    <wsdl:part name="Matricula" type="s:string" />
+    <wsdl:part name="pes" type="s:string" />
+    <wsdl:part name="equipamento" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="Sentido" type="s:string" />
+    <wsdl:part name="status_sentido" type="s:string" />
+    <wsdl:part name="area_de" type="s:string" />
+    <wsdl:part name="area_para" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="insereHttpGetOut" />
+  <wsdl:message name="consultaHttpGetIn">
+    <wsdl:part name="matricula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="consultaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="insereHttpPostIn">
+    <wsdl:part name="Matricula" type="s:string" />
+    <wsdl:part name="pes" type="s:string" />
+    <wsdl:part name="equipamento" type="s:string" />
+    <wsdl:part name="Data" type="s:string" />
+    <wsdl:part name="Sentido" type="s:string" />
+    <wsdl:part name="status_sentido" type="s:string" />
+    <wsdl:part name="area_de" type="s:string" />
+    <wsdl:part name="area_para" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="insereHttpPostOut" />
+  <wsdl:message name="consultaHttpPostIn">
+    <wsdl:part name="matricula" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="consultaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
   <wsdl:portType name="ServiceSoap">
     <wsdl:operation name="insere">
       <wsdl:input message="tns:insereSoapIn" />
@@ -56,6 +102,29 @@
       <wsdl:output message="tns:consultaSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
+<<<<<<< HEAD
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="insere">
+      <wsdl:input message="tns:insereHttpGetIn" />
+      <wsdl:output message="tns:insereHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consulta">
+      <wsdl:input message="tns:consultaHttpGetIn" />
+      <wsdl:output message="tns:consultaHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="insere">
+      <wsdl:input message="tns:insereHttpPostIn" />
+      <wsdl:output message="tns:insereHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consulta">
+      <wsdl:input message="tns:consultaHttpPostIn" />
+      <wsdl:output message="tns:consultaHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
   <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="insere">
@@ -98,12 +167,65 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
+<<<<<<< HEAD
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="insere">
+      <http:operation location="/insere" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="consulta">
+      <http:operation location="/consulta" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="insere">
+      <http:operation location="/insere" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="consulta">
+      <http:operation location="/consulta" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://10.0.6.91/web/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://10.0.6.91/web/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://10.0.6.91/web/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://10.0.6.91/web/service.asmx" />
+=======
   <wsdl:service name="Service">
     <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
       <soap:address location="http://prog/Web/service.asmx" />
     </wsdl:port>
     <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
       <soap12:address location="http://prog/Web/service.asmx" />
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Results>
+<<<<<<< HEAD
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://10.0.6.91/web/Service.asmx?wsdl" filename="Service.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://10.0.6.91/web/Service.asmx?disco" filename="Service.disco" />
+=======
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://localhost:3374/WebSite1/Service.asmx?disco" filename="Service.disco" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://localhost:3374/WebSite1/Service.asmx?wsdl" filename="Service.wsdl" />
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
   </Results>
 </DiscoveryClientResultsFile>

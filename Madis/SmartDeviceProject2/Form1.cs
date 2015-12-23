@@ -17,9 +17,16 @@ namespace SmartDeviceProject2
         Int16 area_de;
         Int16 status_sentido;
         int equipamento;
+<<<<<<< HEAD
+        long pes;
+        string arquivo = @"\Program Files\MarcaPonto\ArquivoPronto.txt";
+        string arquivo_conf = @"\Program Files\MarcaPonto\Config.cfg";
+        //Serializer arqz = new Serializer();
+=======
         string arquivo = @"\Program Files\MarcaPonto\ArquivoPronto.txt";
         string arquivo_conf = @"\Program Files\MarcaPonto\Config.cfg";   
      
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
         public Form1()
         {
             InitializeComponent();
@@ -62,6 +69,20 @@ namespace SmartDeviceProject2
         /// Inserindo no banco de dados através de web services
         /// </summary>
          public void insere_webService()
+<<<<<<< HEAD
+        {
+            try  //numero.substring(numero.length() - 10));
+            {   
+                equipamento =  retorna_equipamento();//pegando o numero do equipamento no config.cfg
+               //retirando o zero via conversão
+                long Novo_Formato = long.Parse(textBox1.Text);
+                textBox1.Text = Convert.ToString(Novo_Formato);
+                //fim da conversão
+                string matricula = textBox1.Text;
+                pes = long.Parse(matricula);
+                DateTime Dataa1 = DateTime.Now;
+                string Data1 = Dataa1.ToString("yyyy-MM-dd HH:mm:ss");
+=======
         {            
             try
             {
@@ -69,6 +90,7 @@ namespace SmartDeviceProject2
                 int matricula = int.Parse(textBox1.Text);
                 string Data1 = DateTime.Now.ToShortDateString();
                 string Data2 = DateTime.Now.ToLongTimeString();
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
                 Conecta_TO to = new Conecta_TO();
                 MarcaPonto.MarcaPonto.Service teste = new MarcaPonto.MarcaPonto.Service();
                 teste.Url = Retorna_Url();
@@ -91,6 +113,19 @@ namespace SmartDeviceProject2
                         area_para = 1;
                     }
                     //inserindo no banco de dados se ele estiver liberado********
+<<<<<<< HEAD
+                    //**********passando para o banco aqui********
+                    teste.insere(matricula,pes, equipamento, Data1, sentido, status_sentido, area_de, area_para);
+                    // bo.Inserir_Log(matricula,equipamento,dataa,sentido,status_sentido,area_de,area_para);
+                    LbStatus.Text = "ONLINE";
+                    MessageBox.Show("Liberado!");
+                    //**********************FIM**********************************
+
+                    //verificar se arquivo existe e salvar o que esta nele e apagar ao acabar de ler*****
+                    //LerArquivo_ParaBanco();
+                    //arqz.salvar_arquivoSerializado(matricula, sentido, area_de, area_para, equipamento);
+                    
+=======
                     to.Matricula = matricula;
                     string dataa = Data1 + " " + Data2;
                     to.Equipamento = equipamento;
@@ -108,6 +143,7 @@ namespace SmartDeviceProject2
                     //verificar se arquivo existe e salvar o que esta nele e apagar ao acabar de ler*****
                     LerArquivo_ParaBanco();
 
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
                 }
                 else // se for negado salvar da mesma forma
                 {
@@ -124,6 +160,19 @@ namespace SmartDeviceProject2
                         area_de = 2;
                         area_para = 1;
                     }
+<<<<<<< HEAD
+                    //pes recebendo zero devido ao relatorio madis
+                    pes = 0;
+                    //**********passando para o banco aqui********
+                    teste.insere(matricula, pes, equipamento, Data1, sentido, status_sentido, area_de, area_para);
+                    LbStatus.Text = "ONLINE";
+                    //**********************FIM**********************************
+                    //verificar se arquivo existe e salvar o que esta nele e apagar ao acabar de ler*****
+                   // LerArquivo_ParaBanco();
+                    //arqz.salvar_arquivoSerializado(matricula, sentido, area_de, area_para, equipamento);
+                    
+                    MessageBox.Show("Acesso Negado!");
+=======
                     //inserindo no banco de dados se ele estiver liberado********
                     to.Matricula = matricula;
                     string dataa = Data1 + " " + Data2;
@@ -139,12 +188,18 @@ namespace SmartDeviceProject2
                     //verificar se arquivo existe e salvar o que esta nele e apagar ao acabar de ler*****
                     LerArquivo_ParaBanco();
                     MessageBox.Show("Acesso Negado");
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
                     
                 }
                 
               }
             catch //caso esteja off line ele vai salvar no banco local
+<<<<<<< HEAD
+            {  // Salva_Arquivo();
+                MessageBox.Show("Erro de Comunicação");
+=======
             {   Salva_Arquivo();
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
             }
         }
          /// <summary>
@@ -216,6 +271,17 @@ namespace SmartDeviceProject2
                         }
                         string[] quebra = linhatexto.Split(';');
                         //cadastra(quebra[0],quebra[1],quebra[2]);
+<<<<<<< HEAD
+                        string matriculaa = quebra[0];
+                        long pess = long.Parse(quebra[1]);
+                        equipamento = int.Parse(quebra[2]);
+                        string Data_ = quebra[3];
+                        Int16 sentido_ = Int16.Parse(quebra[4]);
+                        Int16 status_sentido_= Int16.Parse(quebra[5]);
+                        Int16 area_de_ = Int16.Parse(quebra[6]);
+                        Int16 area_para_ = Int16.Parse(quebra[7]);
+                        conecta.insere(matriculaa,pess, equipamento, Data_, sentido, status_sentido_, area_de_, area_para_);
+=======
                         int matricula = int.Parse(quebra[0]);
                         equipamento = int.Parse(quebra[1]);
                         string Data_ = quebra[2];
@@ -224,6 +290,7 @@ namespace SmartDeviceProject2
                         Int16 area_de_ = Int16.Parse(quebra[5]);
                         Int16 area_para_ = Int16.Parse(quebra[6]);
                         conecta.insere(matricula, equipamento, Data_, sentido, status_sentido_, area_de_, area_para_);
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
                         progressBar1.Value = cont++;
                     }
                 progressBar1.Visible = false;
@@ -247,7 +314,11 @@ namespace SmartDeviceProject2
             string Data2 = DateTime.Now.ToLongTimeString();
             equipamento = retorna_equipamento();
             int status_sentido;
+<<<<<<< HEAD
+           int pess = 0;
+=======
 
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
             //passar também o equipamento e salvar no banco
             //retorna_equipamento();
             status_sentido = 12;
@@ -276,13 +347,20 @@ namespace SmartDeviceProject2
             {
                 log = File.AppendText(arquivo);
             }
+<<<<<<< HEAD
+            log.WriteLine(matricula + ";" + pes + ";" + equipamento + ";" + Data1 + " " + Data2 + ";" + sentido + ";" + status_sentido + ";" + area_de + ";" + area_para);
+=======
             log.WriteLine(matricula + ";" + equipamento + ";" + Data1 + " " + Data2 + ";" + sentido + ";" + status_sentido + ";" + area_de + ";" + area_para);
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
             //log.WriteLine();//verificar se ele ta incluindo algo em branco no banco 
             log.Close();
                //testando arquivo serializer
             //salvar_arquivoSerializado(status_sentido);
         }
 
+<<<<<<< HEAD
+        }
+=======
         public void salvar_arquivoSerializado(int Ssentido)
         {
             Acesso myObject = new Acesso();
@@ -311,4 +389,5 @@ namespace SmartDeviceProject2
            
         }
      }
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
 }

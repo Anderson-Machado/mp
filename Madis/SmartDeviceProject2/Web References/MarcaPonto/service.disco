@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+<<<<<<< HEAD
+  <contractRef ref="http://10.0.6.91/web/service.asmx?wsdl" docRef="http://10.0.6.91/web/service.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://10.0.6.91/web/service.asmx" xmlns:q1="http://127.0.0.1/" binding="q1:ServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://10.0.6.91/web/service.asmx" xmlns:q2="http://127.0.0.1/" binding="q2:ServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+=======
   <contractRef ref="http://prog/Web/service.asmx?wsdl" docRef="http://prog/Web/service.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
   <soap address="http://prog/Web/service.asmx" xmlns:q1="http://127.0.0.1/" binding="q1:ServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
   <soap address="http://prog/Web/service.asmx" xmlns:q2="http://127.0.0.1/" binding="q2:ServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
 </discovery>

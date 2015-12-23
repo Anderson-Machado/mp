@@ -64,6 +64,44 @@ namespace Banco
             //salva em uma tabela temp no dispositivo
         }
     }
+<<<<<<< HEAD
+    public string Inserir_Log(int matricula, int equipamento, string Data, Int16 sentido, Int16 status_sentido, Int16 area_de, Int16 area_para)
+    {
+        try
+        {
+            // já inicializada no construtor
+            SqlConnection conn = new SqlConnection(strconn);
+            // obtém o ID que precisava
+            conn.Open();
+            SqlTransaction transacao = conn.BeginTransaction();
+            StringBuilder sb = new StringBuilder();
+            String sqlProduto = "INSERT INTO LOG_CREDENCIAL([CRED_NUMERO],[EQPI_NUMERO],[MOV_DATAHORA],[MOV_ENTRADASAIDA],[LGCRTI_NUMERO],[ARE_NUMERODE],[ARE_NUMEROPARA],[MOV_FUNCAO],[GRP_NUMERO],[PES_NUMERO],[VISI_NUMERO],[VITA_NUMERO]) VALUES (@CRED_NUMERO,@EQPI_NUMERO,@MOV_DATAHORA,@MOV_ENTRADASAIDA,@LGCRTI_NUMERO,@ARE_NUMERODE,@ARE_NUMEROPARA,@MOV_FUNCAO,@GRP_NUMERO,@PES_NUMERO,@VISI_NUMERO,@VITA_NUMERO)";
+            SqlCommand cmdProduto = new SqlCommand(sqlProduto, conn, transacao);
+            cmdProduto.Parameters.AddWithValue("@CRED_NUMERO", matricula);
+            cmdProduto.Parameters.AddWithValue("@EQPI_NUMERO", equipamento);
+            cmdProduto.Parameters.AddWithValue("@MOV_DATAHORA", Data);
+            cmdProduto.Parameters.AddWithValue("@MOV_ENTRADASAIDA", sentido);
+            cmdProduto.Parameters.AddWithValue("@LGCRTI_NUMERO", status_sentido);
+            cmdProduto.Parameters.AddWithValue("@ARE_NUMERODE", area_de);
+            cmdProduto.Parameters.AddWithValue("@ARE_NUMEROPARA", area_para);
+            cmdProduto.Parameters.AddWithValue("@MOV_FUNCAO", 0);
+            cmdProduto.Parameters.AddWithValue("@GRP_NUMERO", 3);
+            cmdProduto.Parameters.AddWithValue("@PES_NUMERO", 0);
+            cmdProduto.Parameters.AddWithValue("@VISI_NUMERO", 0);
+            cmdProduto.Parameters.AddWithValue("@VITA_NUMERO", 0);
+            cmdProduto.ExecuteNonQuery();
+            transacao.Commit();
+            // conn.Close();
+            return "";
+        }
+        catch (Exception ex)
+        {
+            return "Erro: "+ex.Message;
+        }
+
+    }
+
+=======
     public string Inserir_Log2(int matricula, int equipamento, string Data, Int16 sentido, Int16 status_sentido, Int16 area_de, Int16 area_para)
     {
         // já inicializada no construtor
@@ -93,5 +131,6 @@ namespace Banco
     }
 
 
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     }
 }

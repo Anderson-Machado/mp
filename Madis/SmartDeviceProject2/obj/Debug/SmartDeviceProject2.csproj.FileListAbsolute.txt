@@ -9,3 +9,28 @@ C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDevi
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.exe
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.pdb
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.XML
+<<<<<<< HEAD
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.XML
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.exe
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.pdb
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.Form1.resources
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.Form2.resources
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.Properties.Resources.resources
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.csproj.GenerateResource.Cache
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.exe
+C:\Users\Jimi\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.pdb
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.XML
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.exe
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\bin\Debug\MarcaPonto.pdb
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\bin\Debug\System.Data.SqlClient.dll
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.Form1.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.Form2.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.Properties.Resources.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\SmartDeviceProject2.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.exe
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject2\obj\Debug\MarcaPonto.pdb
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5

@@ -1,0 +1,4 @@
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceTeste\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceTeste\obj\Debug\SmartDeviceTeste.Form1.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceTeste\obj\Debug\SmartDeviceTeste.Properties.Resources.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceTeste\obj\Debug\SmartDeviceTeste.csproj.GenerateResource.Cache

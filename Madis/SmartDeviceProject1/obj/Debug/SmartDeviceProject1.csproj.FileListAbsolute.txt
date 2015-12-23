@@ -6,3 +6,11 @@ C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDevi
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.exe
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.pdb
+<<<<<<< HEAD
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Form1.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.csproj.GenerateResource.Cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.exe
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5

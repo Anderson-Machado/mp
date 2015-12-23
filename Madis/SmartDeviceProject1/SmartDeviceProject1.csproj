@@ -2,7 +2,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
+    <ProductVersion>9.0.21022</ProductVersion>
+=======
     <ProductVersion>9.0.30729</ProductVersion>
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{F8CC8E12-06E0-48B0-AB6C-AD61554C0330}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -65,6 +69,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+<<<<<<< HEAD
+      <SubType>Designer</SubType>
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,7 +83,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Web References\Parcaponto\Reference.cs">
+=======
     <Compile Include="Web References\localhost\Reference.cs">
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -85,10 +97,17 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <WebReferenceUrl Include="http://10.0.6.91/web/service.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\Parcaponto\</RelPath>
+      <UpdateFromURL>http://10.0.6.91/web/service.asmx</UpdateFromURL>
+=======
     <WebReferenceUrl Include="http://192.168.0.2:3374/WebSite1/Service.asmx">
       <UrlBehavior>Static</UrlBehavior>
       <RelPath>Web References\localhost\</RelPath>
       <UpdateFromURL>http://192.168.0.2:3374/WebSite1/Service.asmx</UpdateFromURL>
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
@@ -100,12 +119,23 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <None Include="Web References\Parcaponto\service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\Parcaponto\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Parcaponto\service.disco" />
+=======
     <None Include="Web References\localhost\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Web References\localhost\Service.disco" />
     <None Include="Web References\localhost\Service.wsdl" />
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
   <ProjectExtensions>

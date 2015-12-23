@@ -34,7 +34,12 @@ namespace SmartDeviceProject1
         {
             try
             {
+<<<<<<< HEAD
+               // localhost.Service consumo = new SmartDeviceProject1.localhost.Service();
+                Parcaponto.Service consumo = new SmartDeviceProject1.Parcaponto.Service();
+=======
                 localhost.Service consumo = new SmartDeviceProject1.localhost.Service();
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
                 int Matricula = int.Parse(textBox1.Text);
                 string resp;
                 string Data = DateTime.Now.ToLongDateString();//alterar o formato
@@ -49,7 +54,11 @@ namespace SmartDeviceProject1
                     {
                         sentido = 2;
                     }
+<<<<<<< HEAD
+                    //consumo.insere(Matricula, Data, sentido);
+=======
                     consumo.insere(Matricula, Data, sentido);
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
                     MessageBox.Show("Liberado");
                 }
                 else

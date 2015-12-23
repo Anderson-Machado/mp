@@ -3,3 +3,11 @@ C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\Banco\bin
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\Banco\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\Banco\obj\Debug\Banco.dll
 C:\Users\Anderson\Documents\Visual Studio 2008\Projects\Project1\Madis\Banco\obj\Debug\Banco.pdb
+<<<<<<< HEAD
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Banco\bin\Debug\Banco.dll
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Banco\bin\Debug\Banco.pdb
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Banco\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Banco\obj\Debug\Banco.dll
+C:\Users\hp\Documents\Marca Ponto\Madis\Madis\Banco\obj\Debug\Banco.pdb
+=======
+>>>>>>> f3f47d0cc5bfbfd5371eeae9b4216f12b18821d5
